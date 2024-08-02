@@ -44,7 +44,7 @@ body {
   border-style: none;
   border-radius: 5px;
 }
-#secret-key {
+.display {
   text-align: center;
   width: 146px;
   height: 50px;
@@ -52,6 +52,9 @@ body {
   color: white;
   border: 2px solid white;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ------------------------------------ */
 .right-div {
@@ -60,8 +63,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 25px;
+}
+
+.display-digit {
+  width: 80%;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
   gap: 20px;
 }
+
 #keyboard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -86,4 +98,10 @@ body {
 }
 #clear {
   background-color: #d9534f;
+}
+
+#display-key {
+  text-align: right;
+  padding: 0px 5px;
+  justify-content: right;
 }

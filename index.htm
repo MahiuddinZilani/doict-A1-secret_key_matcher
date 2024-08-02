@@ -14,31 +14,29 @@
         <button onclick="generateKey()" type="button" id="secret-key-generator">
           Generate Secret Key
         </button>
-        <div id="secret-key">
-          <p>******</p>
-        </div>
+        <div id="secret-key" class="display">******</div>
       </div>
       <div class="right-div common-in-div">
-        <div>
+        <div class="display-digit">
           <label>Enter Pin:</label>
-          <input type="number" name="number" id="number" />
+          <div id="display-key" class="display"></div>
         </div>
         <div id="keyboard">
-          <div class="keyPad">1</div>
-          <div class="keyPad">2</div>
-          <div class="keyPad">3</div>
-          <div class="keyPad">4</div>
-          <div class="keyPad">5</div>
-          <div class="keyPad">6</div>
-          <div class="keyPad">7</div>
-          <div class="keyPad">8</div>
-          <div class="keyPad">9</div>
-          <div class="keyPad">0</div>
-          <div class="keyPad" id="cancel">--</div>
-          <div class="keyPad" id="submit">Submit</div>
-          <div class="keyPad" id="clear">clear</div>
+          <div onclick="addDigit(1)" class="keyPad">1</div>
+          <div onclick="addDigit(2)" class="keyPad">2</div>
+          <div onclick="addDigit(3)" class="keyPad">3</div>
+          <div onclick="addDigit(4)" class="keyPad">4</div>
+          <div onclick="addDigit(5)" class="keyPad">5</div>
+          <div onclick="addDigit(6)" class="keyPad">6</div>
+          <div onclick="addDigit(7)" class="keyPad">7</div>
+          <div onclick="addDigit(8)" class="keyPad">8</div>
+          <div onclick="addDigit(9)" class="keyPad">9</div>
+          <div onclick="addDigit(0)" class="keyPad">0</div>
+          <div onclick="cancel()" class="keyPad" id="cancel">cancel</div>
+          <div onclick="submit()" class="keyPad" id="submit">Submit</div>
+          <button onclick="clr()" class="keyPad" id="clear">clear</button>
         </div>
-        <div>Status Bar</div>
+        <div id="status"></div>
       </div>
     </main>
   </body>
