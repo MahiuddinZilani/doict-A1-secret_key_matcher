@@ -10,7 +10,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 #main-container {
   /* background-color: bisque; */
   padding: 10px;
@@ -22,13 +21,13 @@ body {
   align-items: center;
   gap: 15px;
 }
-
 .common-in-div {
   background-color: #000000;
   color: white;
   width: 50%;
   height: 100%;
 }
+/* ----------------------------------- */
 .left-div {
   border-radius: 10px 0px 0px 10px;
   display: flex;
@@ -37,10 +36,6 @@ body {
   align-items: center;
   gap: 10px;
 }
-.right-div {
-  border-radius: 0px 10px 10px 0px;
-}
-
 #secret-key-generator {
   width: 150px;
   height: 80px;
@@ -57,4 +52,38 @@ body {
   color: white;
   border: 2px solid white;
   border-radius: 5px;
+}
+/* ------------------------------------ */
+.right-div {
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#keyboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  grid-template-rows: 4;
+}
+.keyPad {
+  width: 80px;
+  height: 50px;
+  background-color: #333333;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cancel {
+  background-color: #f0ad4e;
+}
+#submit {
+  background-color: #5cb85c;
+}
+#clear {
+  background-color: #d9534f;
 }
