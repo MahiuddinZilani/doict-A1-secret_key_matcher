@@ -28,9 +28,9 @@ function cancel() {
 }
 
 function submit() {
-  let generateKey = document.getElementById("secret-key").innerHTML;
+  let generatedKey = document.getElementById("secret-key").innerHTML;
   let status = document.getElementById("status");
-  if (generateKey == inputNumber) {
+  if (generatedKey == inputNumber) {
     status.innerHTML = "Your secret key is matched";
   } else status.innerHTML = "Secret key is not matched";
 }

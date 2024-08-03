@@ -11,17 +11,15 @@ body {
   align-items: center;
 }
 #main-container {
-  /* background-color: bisque; */
   padding: 10px;
   width: 90%;
-  height: 80%;
-  /* margin: 20px auto; */
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
-.common-in-div {
+.common-in-both-div {
   background-color: #000000;
   color: white;
   width: 50%;
@@ -37,8 +35,11 @@ body {
   gap: 10px;
 }
 #secret-key-generator {
-  width: 150px;
-  height: 80px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+  height: auto;
+  padding: 20px 0px;
   background-color: #007bff;
   color: white;
   border-style: none;
@@ -46,8 +47,11 @@ body {
 }
 .display {
   text-align: center;
-  width: 146px;
-  height: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 196px;
+  height: auto;
+  padding: 15px 0px;
   background-color: #333333;
   color: white;
   border: 2px solid white;
@@ -66,42 +70,65 @@ body {
   gap: 25px;
 }
 
-.display-digit {
-  width: 80%;
-  font-size: 30px;
+.display-digit-container {
+  width: 65%;
+  font-size: 28px;
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+#display-key {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  width: 30%;
+  height: 40px;
+  padding: 5px 15px;
+  justify-content: right;
 }
 
-#keyboard {
+#keyboard-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
   grid-template-rows: 4;
+  font-size: 28px;
+  font-weight: 600;
 }
 .keyPad {
   width: 80px;
   height: 50px;
   background-color: #333333;
+  color: white;
   border: 1px solid white;
   border-radius: 5px;
+
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#cancel {
+#backspace {
   background-color: #f0ad4e;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
 }
 #submit {
   background-color: #5cb85c;
+  font-size: 16px;
+  font-weight: 400;
 }
 #clear {
   background-color: #d9534f;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-#display-key {
-  text-align: right;
-  padding: 0px 5px;
-  justify-content: right;
+#status {
+  height: 20px;
 }

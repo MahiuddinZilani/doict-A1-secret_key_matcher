@@ -5,36 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Secret Key Matcher</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <script src="scripts.js"></script>
   </head>
   <body>
     <main id="main-container">
-      <div class="left-div common-in-div">
+      <div class="left-div common-in-both-div">
         <!-- <h3>left</h3> -->
         <button onclick="generateKey()" type="button" id="secret-key-generator">
-          Generate Secret Key
+          Generate <br />
+          Secret Key
         </button>
         <div id="secret-key" class="display">******</div>
       </div>
-      <div class="right-div common-in-div">
-        <div class="display-digit">
+      <div class="right-div common-in-both-div">
+        <div class="display-digit-container">
           <label>Enter Pin:</label>
           <div id="display-key" class="display"></div>
         </div>
-        <div id="keyboard">
-          <div onclick="addDigit(1)" class="keyPad">1</div>
-          <div onclick="addDigit(2)" class="keyPad">2</div>
-          <div onclick="addDigit(3)" class="keyPad">3</div>
-          <div onclick="addDigit(4)" class="keyPad">4</div>
-          <div onclick="addDigit(5)" class="keyPad">5</div>
-          <div onclick="addDigit(6)" class="keyPad">6</div>
-          <div onclick="addDigit(7)" class="keyPad">7</div>
-          <div onclick="addDigit(8)" class="keyPad">8</div>
-          <div onclick="addDigit(9)" class="keyPad">9</div>
-          <div onclick="addDigit(0)" class="keyPad">0</div>
-          <div onclick="cancel()" class="keyPad" id="cancel">cancel</div>
-          <div onclick="submit()" class="keyPad" id="submit">Submit</div>
-          <button onclick="clr()" class="keyPad" id="clear">clear</button>
+        <div id="keyboard-container">
+          <button onclick="addDigit(1)" class="keyPad">1</button>
+          <button onclick="addDigit(2)" class="keyPad">2</button>
+          <button onclick="addDigit(3)" class="keyPad">3</button>
+          <button onclick="addDigit(4)" class="keyPad">4</button>
+          <button onclick="addDigit(5)" class="keyPad">5</button>
+          <button onclick="addDigit(6)" class="keyPad">6</button>
+          <button onclick="addDigit(7)" class="keyPad">7</button>
+          <button onclick="addDigit(8)" class="keyPad">8</button>
+          <button onclick="addDigit(9)" class="keyPad">9</button>
+          <button onclick="addDigit(0)" class="keyPad">0</button>
+          <button onclick="cancel()" class="keyPad" id="backspace">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </button>
+          <button onclick="submit()" class="keyPad" id="submit">Submit</button>
+          <button onclick="clr()" class="keyPad" id="clear">Clear</button>
         </div>
         <div id="status"></div>
       </div>
