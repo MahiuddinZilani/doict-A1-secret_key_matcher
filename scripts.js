@@ -31,8 +31,9 @@ function submit() {
   let generatedKey = document.getElementById("secret-key").innerHTML;
   let status = document.getElementById("status");
   if (generatedKey == inputNumber) {
-    status.innerHTML = "Your secret key is matched";
-  } else status.innerHTML = "Secret key is not matched";
+    status.innerHTML = `<span id="green-sign" class="material-symbols-outlined">check</span><span>  Your secret key is matched</span>`;
+  } else
+    status.innerHTML = `<span id="red-sign" class="material-symbols-outlined">close</span><span>  Your secret key is not matched</span>`;
 }
 
 function clr() {

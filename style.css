@@ -13,7 +13,7 @@ body {
 #main-container {
   padding: 10px;
   width: 90%;
-  height: 75%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,9 +128,28 @@ body {
 }
 /* ----------STATUS----------- */
 #status {
-  height: 20px;
-  margin: 20px auto;
+  height: 5px;
+  margin-top: 20px;
   font-size: 24px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#red-sign {
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  background-color: red;
+  margin: 0px;
+}
+#green-sign {
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  font-size: 24px;
+  background-color: #5cb85c;
 }
 
 /* Extra small devices (phones, 600px and down) */
