@@ -79,3 +79,30 @@ These three mechanisms are used to store data on the client-side.
 | Capacity          | Large (5MB)    |     Large (5MB)   |   Small (4KB)   |
 | Server Access     |      No        |      No           |       Yes       |
 |Use Cace    |   Storing user preferences, application data, offline caching.|Temporary data storage, shopping cart information, form data.|Session management, user authentication, tracking user behavior, storing small pieces of data.|
+
+# 4. In CSS what is the difference between display inline , display inline block and display block?
+## Answer
+
+The display property in CSS determines how an element is displayed on a page. It affects the element's layout and behavior.
+
+### display: inline
+- Behavior: Elements with display: inline are displayed in line with other content.
+- Characteristics:
+  - Doesn't start a new line.
+  - Can't set width or height.   
+  - Margins and padding only affect horizontal spacing.
+   ### Example: span, a, img (by default)
+
+### display: inline-block
+- Behavior: Combines the characteristics of inline and block elements.
+- Characteristics:
+  - Elements are displayed inline but can be sized independently.   
+  - Can set width and height.   
+  - Margins and padding affect all sides.
+  - Useful for creating horizontal layouts without using floats.
+   
+### display: block
+- Behavior: Elements with display: block start on a new line and occupy the full width available.
+- Characteristics:
+  - Can set width, height, margins, and padding.
+  - Example: div, p, h1 to h6
