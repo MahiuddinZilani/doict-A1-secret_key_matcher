@@ -169,11 +169,11 @@ body {
     gap: 10px;
   }
   .display-digit-container {
-    width: 80%;
+    width: 250px;
+    font-size: 20px;
   }
   #display-key {
-    font-size: 24px;
-    width: 50%;
+    width: 40%;
     height: 30px;
   }
   #keyboard-container {
