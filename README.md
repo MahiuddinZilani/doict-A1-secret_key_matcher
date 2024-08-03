@@ -106,3 +106,27 @@ The display property in CSS determines how an element is displayed on a page. It
 - Characteristics:
   - Can set width, height, margins, and padding.
   - Example: div, p, h1 to h6
+
+# 5. What are new features in CSS3?
+## Answer
+CSS3 introduced a vast array of features that significantly enhanced web design capabilities.
+### 1. Advanced selectors
+More advanced than CSS selectors, these provide a sequence of simple selectors for styling specific HTML elements.
+### 2. Pseudo-elements
+New pseudo-elements and the double colon (::) convention for easier and more detailed styling.
+### 3. Border styling
+New features like border-radius, border-image-slice, border-image-source, and values for "width stretch".
+### 4. Background style properties
+New properties like background-clip, background-size, background-style, and background-origin.
+### 5. CSS nesting
+Eliminates the need to repeatedly specify the parent selector, making the codebase more readable.
+### 6. Flexbox
+A new layout that makes it easier to arrange elements on a page in a way that works across different screen sizes, resolutions, and devices
+Multiple backgrounds and gradients.
+Allows creators to stack different pictures as backgrounds of a component, and move and animate each layer.
+### 7. Box-shadow
+A new way to add drop shadow effects to a style sheet without using Photoshop.
+### 8. Transitions
+Allows for animation without adding JavaScript code.
+### 9. Media queries
+A technique to help define screen breakpoints for styling and laying out website design elements for different screen sizes.
