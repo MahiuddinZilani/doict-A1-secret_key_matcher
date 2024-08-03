@@ -25,7 +25,7 @@ body {
   width: 50%;
   height: 100%;
 }
-/* ----------------------------------- */
+/* ---------SECRET KEY GENERATION DIV--------- */
 .left-div {
   border-radius: 10px 0px 0px 10px;
   display: flex;
@@ -60,7 +60,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* ------------------------------------ */
+/* ------------KEYPAD, DISPLAY and OPERATIONAL DIV------------- */
 .right-div {
   border-radius: 0px 10px 10px 0px;
   display: flex;
@@ -69,7 +69,6 @@ body {
   align-items: center;
   gap: 25px;
 }
-
 .display-digit-container {
   width: 65%;
   font-size: 28px;
@@ -87,7 +86,6 @@ body {
   padding: 5px 15px;
   justify-content: right;
 }
-
 #keyboard-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -128,7 +126,129 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
-
+/* ----------STATUS----------- */
 #status {
   height: 20px;
+  margin: 20px auto;
+  font-size: 24px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html,
+  body,
+  #main-container,
+  .common-in-both-div {
+    width: 100%;
+    height: min-content;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .left-div {
+    border-radius: 10px 10px 0px 0px;
+    width: 90%;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #secret-key-generator {
+    font-size: 14px;
+    font-weight: 500;
+    width: 100px;
+    height: auto;
+    margin: 20px;
+  }
+  #secret-key {
+    font-size: 30px;
+    font-weight: 600;
+    width: 140px;
+  }
+  .right-div {
+    border-radius: 0px 0px 10px 10px;
+    width: 90%;
+    padding: 20px 0px;
+    gap: 10px;
+  }
+  .display-digit-container {
+    width: 80%;
+  }
+  #display-key {
+    font-size: 24px;
+    width: 50%;
+    height: 30px;
+  }
+  #keyboard-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .keyPad {
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+  }
+  #backspace,
+  #submit,
+  #clear {
+    font-size: 14px;
+  }
+}
+
+/* medium device */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  html,
+  body,
+  #main-container,
+  .common-in-both-div {
+    width: 100%;
+    height: min-content;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .left-div {
+    border-radius: 10px 10px 0px 0px;
+    width: 70%;
+    flex-direction: row;
+    gap: 10px;
+  }
+  #secret-key-generator {
+    font-size: 18px;
+    font-weight: 500;
+    width: 150px;
+    height: auto;
+    margin: 20px;
+  }
+  #secret-key {
+    font-size: 30px;
+    font-weight: 600;
+    width: 160px;
+  }
+  .right-div {
+    border-radius: 0px 0px 10px 10px;
+    width: 70%;
+    padding: 20px 0px;
+    gap: 10px;
+  }
+  .display-digit-container {
+    font-size: 20px;
+    width: 380px;
+  }
+  #display-key {
+    font-size: 24px;
+    text-align: center;
+    width: 35%;
+    height: 30px;
+  }
+  #keyboard-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .keyPad {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+  }
+  #backspace,
+  #submit,
+  #clear {
+    font-size: 14px;
+  }
 }
